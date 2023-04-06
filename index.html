@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Guessing Game</title>
+		<link rel="stylesheet" href="main.css" />
+		<!-- the MAIN.CSS file is linked here -->
+	</head>
+
+	<body>
+
+		<div id="app" class="center overlay container">
+
+			<div id="headers">
+				<h1 id="title" class="center"> My Guessing Game </h1>
+				<h3 id="subtitle" class="center">Guess a number between 1-100</h3>
+			</div> <!-- closing headers div -->
+
+		
+			<div id="main">
+				<div id="input-parent">
+					<input id="player-input" class="center" placeholder="Enter Guess" maxlength = '3' autofocus="autofocus"></input>
+					<button id="submit" class="center">Submit</button>
+				</div>
+
+			</div> <!-- closing main div -->
+		
+			<div id="guesses">
+				<ul id="guessed-nums">
+					<li class="guess"> </li>
+					<li class="guess"> </li>
+					<li class="guess"> </li>
+					<li class="guess"> </li>
+					<li class="guess"> </li>
+				</ul>
+			</div> <!-- closing guesses div -->
+
+			<div id="menu" class="center">
+				<button type="button" id="reset">Reset</button>
+				<button type="button" id="hint-request">Hint</button>
+			</div> <!-- closing menu div -->
+
+			<div id="revealed-hints">
+				<ul id="hint-list" class="center">
+					<li class="hint"> </li>
+					<li class="hint"> </li>
+					<li class="hint"> </li>
+				</ul>
+			</div> <!-- closing revealed-hints div -->
+
+		</div> <!-- closing app div-->
+
+
+		<script src='js/guessing-game.js'></script>
+		<!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+	</body>
+</html>
